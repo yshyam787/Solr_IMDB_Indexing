@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  solr:
+    image: solr:latest
+    container_name: solr
+    ports:
+      - "8983:8983"
+    volumes:
+      - ./solr_data:/var/solr
+    entrypoint: ["/bin/bash", "/var/solr/data/entrypoint.sh"]

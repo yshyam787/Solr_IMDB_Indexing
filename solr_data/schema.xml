@@ -1,0 +1,23 @@
+<schema name="imdb" version="1.6">
+  <!-- Define fields -->
+  <field name="id" type="string" indexed="true" stored="true" required="true"/>
+  <field name="poster_link" type="string" indexed="true" stored="true"/>
+  <field name="series_title" type="text_general" indexed="true" stored="true"/>
+  <field name="released_year" type="pint" indexed="true" stored="true"/>
+  <field name="certificate" type="string" indexed="true" stored="true"/>
+  <field name="runtime" type="string" indexed="true" stored="true"/>
+  <field name="genre" type="text_general" indexed="true" stored="true"/>
+  <field name="imdb_rating" type="pfloat" indexed="true" stored="true"/>
+  <field name="overview" type="text_general" indexed="true" stored="true"/>
+  <field name="meta_score" type="pint" indexed="true" stored="true"/>
+  <field name="director" type="string" indexed="true" stored="true"/>
+  <field name="star1" type="string" indexed="true" stored="true"/>
+  <field name="star2" type="string" indexed="true" stored="true"/>
+  <field name="star3" type="string" indexed="true" stored="true"/>
+  <field name="star4" type="string" indexed="true" stored="true"/>
+  <field name="no_of_votes" type="pint" indexed="true" stored="true"/>
+  <field name="gross" type="pfloat" indexed="true" stored="true"/>
+
+  <!-- Define the unique key -->
+  <uniqueKey>id</uniqueKey>
+</schema>
